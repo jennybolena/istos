@@ -8,18 +8,48 @@
 	</head>
 	<body>
 		<header>
-			<h1>Porfolio</h1>
+			<nav>
+				<a href="" target="_self">Home</a>
+				<a href="education.html" target="_self">Education</a>
+				<a href="projects.html" target="_self">Projects</a>
+			</nav>
 		</header>
-		<nav>
-			<a href="" target="_self">Home</a>
-			<a href="" target="_self">About</a>
-			<a href="" target="_self">Projects</a>
-		</nav>
 		<main>
-			
+			<section>
+				<h2>Hi, I'm Jenny Bolena.</h2>
+				<h3>A 21 year old junior Web Developer and enthusiast!</h3>
+				<img src="images/profile_img.jpg" width="30%" height="auto" alt="Profile image">
+			</section>
 		</main>
 		<footer>
-			
+				<h2>Contacts</h2>
+				<section>
+					<h3>Contact Form</h3>
+					<form action="mailto:bolenatzeni@gmail.com?subject=Portfolio Contact" method="post" enctype="text/plain">
+						<label for="first_name">First Name:</label>
+						<input type="text" id="first_name" name="first_name">
+
+						<label for="last_name">Last Name:</label>
+						<input type="text" id="last_name" name="last_name">
+						
+						<label for="subject">Subject:</label>
+						<input type="text" id="subject" name="last_name">
+
+						<label for="content">Content:</label>
+						<textarea type="text" id="content" name="content" rows="5" cols="40"> </textarea>
+
+						<input type="file" id="myfile" name="myfile">
+
+						<input type="submit" id="submit_btn" value="Submit">
+					</form>
+				</section>
+				<nav>
+					<p>Follow me:</p>
+					<a href="">LinkedIn</a>
+					<a href="">github</a>
+					<a href="">twitter</a>
+				</section>
+				<p>© 2021 Jenny Bolena</p>
 		</footer>
 	</body>
 </html>

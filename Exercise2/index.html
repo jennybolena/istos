@@ -5,6 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="Jenny Bolena" content="portfolio">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://kit.fontawesome.com/8e87b8ef90.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header>
@@ -23,31 +24,38 @@
 		</main>
 		<footer>
 				<h2>Contacts</h2>
-				<section>
-					<h3>Contact Form</h3>
-					<form action="mailto:bolenatzeni@gmail.com?subject=Portfolio Contact" method="post" enctype="text/plain">
+				<fieldset id="contact_form_container">
+					<legend>Contact me</legend>
+					<form action="mailto:bolenatzeni@gmail.com?" method="post" enctype="text/plain">
 						<label for="first_name">First Name:</label>
 						<input type="text" id="first_name" name="first_name">
 
 						<label for="last_name">Last Name:</label>
 						<input type="text" id="last_name" name="last_name">
 						
-						<label for="subject">Subject:</label>
-						<input type="text" id="subject" name="last_name">
+						<label for="subject">Select a subject:</label>
+						<select name="subject" id="subject">
+						    <option value="professional reason">profesional reason</option>
+						    <option value="career advise">career advise</option>
+						    <option value="general question" selected="selected">general questions</option>
+						</select>
 
 						<label for="content">Content:</label>
-						<textarea type="text" id="content" name="content" rows="5" cols="40"> </textarea>
-
-						<input type="file" id="myfile" name="myfile">
-
+						<textarea type="text" id="content" name="content" rows="5" cols="40" required></textarea>
 						<input type="submit" id="submit_btn" value="Submit">
 					</form>
-				</section>
+				</fieldset>
 				<nav>
 					<p>Follow me:</p>
-					<a href="">LinkedIn</a>
-					<a href="">github</a>
-					<a href="">twitter</a>
+					<a href="https://www.linkedin.com/in/jenny-bolena/" target="_blank">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+					<a href="https://github.com/jennybolena" target="_blank">
+						<i class="fab fa-github"></i>
+					</a>
+					<a href="https://twitter.com/jennybolena" target="_blank">
+						<i class="fab fa-twitter"></i>
+					</a>
 				</section>
 				<p>© 2021 Jenny Bolena</p>
 		</footer>

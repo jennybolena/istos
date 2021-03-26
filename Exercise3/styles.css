@@ -11,21 +11,51 @@ body{
 }
 
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4{
 	padding: 10px;
+}
+
+h1{
+	font-size: 35px;
+}
+h2{
+	font-size: 32px;
+}
+h3{
+	font-size: 29px;
+}
+h4{
+	font-size: 26px;
 }
 
 p{
 	padding: 0 10px;
+	font-size: 20px;
 	text-align: justify;
   	text-justify: inter-word;
 }
 
-header{
+#index_header{
 	position: sticky;
 	top: 0;
 }
 
+textarea{
+	resize: none;
+}
+
+
+a, a:link, a:visited {
+  color: #783030;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #783000;
+}
+a:active {
+ color: gray; 
+}
 /*header nav*/
 #header_nav{
 	background-color: black;
@@ -40,10 +70,9 @@ header{
 	display: block;
 	float: left;
 	text-align: center;
-	text-decoration: none;
 	font-size: 20px;
 	padding: 15px 25px;
-	color: white;
+	
 	
 }
 
@@ -96,9 +125,66 @@ header{
 i{
 	padding: 10px;
 	font-size: 40px;
-	color: #000000; 
 }
 
-i:hover{
-	color: #783030;
+/*footer float rule*/
+#contact_container:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#contact_form_container{
+	width: 60%;
+	float: left;
+	border: 1px solid #A8A8A8;
+}
+
+#footer_nav{
+	width: 40%;
+	float: left;
+	padding: 20px;
+}
+
+#copy_rights{
+	text-align: center;
+	padding: 20px;
+}
+
+/*for education and project */
+.education_part, .project{
+	padding: 10px;
+	border: 2px solid #A8A8A8;
+}
+
+.education_part ul{
+	padding: 10px 50px;
+}
+
+.education_part a, .project a{
+	display: block;
+	text-align: center;
+	padding: 10px 0 0; 
+}
+
+#education_proof_container {
+	padding: 20px 0;
+	text-align: center;
+}
+
+#education_proof{
+	text-align: center;
+}
+
+.sub_project{
+	padding: 10px;
+	border: 2px solid #D8D8D8;
+}
+
+.see_more{
+	text-align: center;
+}
+
+#shout_out p{
+	padding: 0 0 20px 10px;
 }

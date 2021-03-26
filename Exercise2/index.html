@@ -10,28 +10,30 @@
 	</head>
 	<body>
 		<header>
-			<nav>
+			<h1>My portfolio</h1>
+			<nav id="header_nav" class="nav">
 				<a href="" target="_self">Home</a>
 				<a href="education.html" target="_self">Education</a>
 				<a href="projects.html" target="_self">Projects</a>
 			</nav>
 		</header>
 		<main>
-			<section>
+			<section id="small_intro">
 				<h2>Hi, I'm Jenny Bolena.</h2>
 				<h3>A 21 year old junior Web Developer and enthusiast!</h3>
-				<img src="images/profile_img.jpg" width="250" height="350" alt="Profile image">
+				<img src="images/profile_img.jpg" width="250" height="350" alt="Profile image" id="prof_pic">
 			</section>
-			<section>
+			<section id="about_me">
 				<h2>About me</h2>
 				<p>Through out my first Software Developer years I've worked and experimented with quite a few languages and tools. Recently I have come in terms of realizing how much fun Web Development is for me. Combining fun with something I am geninly interested in, for me is the dream combination. With a backround of languages such as Java, C++ and PHP the transition to full time Web Developer was quite smooth. I am planing on adding up to that knwledge and improving my skills regarding Front-End tools. With time and passion i believe to acomplish the goals I set and fullify my dreams. <p>
 			</section>
 		</main>
-		<footer>
+		<footer id="contacts">
 				<h2>Contacts</h2>
 				<fieldset id="contact_form_container">
 					<legend>Contact me</legend>
-					<form action="mailto:bolenatzeni@gmail.com?" method="post" enctype="text/plain">
+					<form action="mailto:bolenatzeni@gmail.com?" method="post" enctype="text/plain"
+					 id="contact_form">
 						<label for="first_name">First Name:</label>
 						<input type="text" id="first_name" name="first_name">
 
@@ -50,7 +52,7 @@
 						<input type="submit" id="submit_btn" value="Submit">
 					</form>
 				</fieldset>
-				<nav>
+				<nav id="footer_nav" class="nav">
 					<p>Follow me:</p>
 					<a href="https://www.linkedin.com/in/jenny-bolena/" target="_blank">
 						<i class="fab fa-linkedin-in"></i>
@@ -62,7 +64,7 @@
 						<i class="fab fa-twitter"></i>
 					</a>
 				</nav>
-				<p>© 2021 Jenny Bolena</p>
+				<p id="copy_rights">© 2021 Jenny Bolena</p>
 		</footer>
 	</body>
 </html>

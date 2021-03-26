@@ -1,0 +1,104 @@
+*, html{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	 font-family: Arial, Helvetica;
+	 background-color: #F0F0F0;
+	 color: black;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+	padding: 10px;
+}
+
+p{
+	padding: 0 10px;
+	text-align: justify;
+  	text-justify: inter-word;
+}
+
+header{
+	position: sticky;
+	top: 0;
+}
+
+/*header nav*/
+#header_nav{
+	background-color: black;
+}
+
+#header_nav:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+#header_nav a{
+	display: block;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 15px 25px;
+	color: white;
+	
+}
+
+#header_nav a:hover{
+	background-color: #0F0F0F;
+	color: white;
+}
+
+/*small intro*/
+#small_intro{
+	background-color: #0F0F0F;
+	color: white;
+	text-align: center;
+}
+
+#small_intro h2{
+	padding-top: 20px;
+}
+
+#small_intro h3{
+	padding-bottom: 20px;
+}
+
+#prof_pic{
+	padding: 20px;
+	width: 30%;
+	height: auto;
+	border-radius: 50%;
+}
+
+/*about me*/
+#about_me{
+	background-color: #0F0F0F;
+	color: #FFFFFF;
+	padding: 10px 0 20px;
+}
+
+
+/*style contact form*/
+#contact_form{
+	padding: 10px;
+}
+
+/*follow me part*/
+#footer_nav p{
+	font-size: 25px;
+}
+/*font-awsome icons*/ 
+
+i{
+	padding: 10px;
+	font-size: 40px;
+	color: #000000; 
+}
+
+i:hover{
+	color: #783030;
+}

@@ -12,7 +12,7 @@
 	<body>
 		<header id="index_header">
 			<nav id="header_nav" class="nav">
-				<a href="index.html" target="_self">Home</a>
+				<a href="" target="_self" id="home_ref">Home</a>
 				<a href="education.html" target="_self">Education</a>
 				<a href="projects.html" target="_self">Projects</a>
 			</nav>
@@ -20,7 +20,7 @@
 		<main>
 			<section id="small_intro">
 				<h2>Hi, I'm Jenny Bolena.</h2>
-				<h3>A 21 year old junior Web Developer and enthusiast!</h3>
+				<h3>A 21 year old <strong>junior Web Developer</strong> and enthusiast!</h3>
 				<img src="images/profile_img.jpg" width="250" height="350" alt="Profile image" id="prof_pic">
 			</section>
 			<section id="about_me">
@@ -35,22 +35,28 @@
 						<h3>Contact me</h3>
 						<form action="mailto:bolenatzeni@gmail.com?" method="post" enctype="text/plain"
 						 id="contact_form">
-							<label for="first_name">First Name:</label>
-							<input type="text" id="first_name" name="first_name">
-
-							<label for="last_name">Last Name:</label>
-							<input type="text" id="last_name" name="last_name">
-							
-							<label for="subject">Select a subject:</label>
-							<select name="subject" id="subject">
-							    <option value="professional reason">profesional reason</option>
-							    <option value="career advise">career advise</option>
-							    <option value="general question" selected="selected">general questions</option>
-							</select>
-
-							<label for="content">Content:</label>
-							<textarea id="content" name="content" rows="5" cols="40" required></textarea>
-							<input type="submit" id="submit_btn" value="Submit">
+							<div class="form_row">
+								<label for="first_name">First Name:</label>
+								<input type="text" id="first_name" name="first_name">
+							</div>
+							<div class="form_row">
+								<label for="last_name">Last Name:</label>
+								<input type="text" id="last_name" name="last_name">
+							</div>
+							<div class="form_row">
+								<label for="subject">Select a subject:</label>
+								<select name="subject" id="subject">
+							    	<option value="professional reason">profesional reason</option>
+							    	<option value="career advise">career advise</option>
+							    	<option value="general questio" selected="selected">general questions
+							    	</option>
+								</select>
+							</div>
+							<div class="form_row">
+								<label for="content">Content:</label>
+								<textarea id="content" name="content" rows="5" cols="30" required></textarea>
+							</div>
+								<input type="submit" class="submit_btn" value="Submit">
 						</form>
 					</section>
 					<nav id="footer_nav" class="nav">

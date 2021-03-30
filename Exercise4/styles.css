@@ -39,6 +39,8 @@ p{
 	font-size: 18px;
 }
 
+
+/*index page styling*/
 .index_header{grid-area: header;}
 .index_main{grid-area: main;}
 .side_content{grid-area: side;}
@@ -84,8 +86,13 @@ p{
 	color: #000000;
 }
 
-.index_main picture{
-	display: block;
+.index_main figure{
+	text-align: center;
+}
+
+.index_main figure img{
+	width: 50%;
+	height: auto; 
 	text-align: center;
 }
 
@@ -114,7 +121,7 @@ p{
 	text-align: center;
 }
 
-.side_nav_bar li{
+.side_nav_bar ul{
 	list-style-type: none;
 }
 

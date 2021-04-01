@@ -7,6 +7,7 @@
 body{
 	background-color: #1B1B1B;
 	color: white;
+	overflow-x: hidden;
 	font-family: Arial, Helvetica;
 }
 
@@ -54,6 +55,13 @@ p{
 	font-size: 18px;
 }
 
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style-type: none;
+}
 
 /*index page styling*/
 .index_header{grid-area: header;}
@@ -160,38 +168,71 @@ p{
 	padding-top: 10px; 
 }
 
-/*set up styling*/
+
+
+/*set up and sql styling*/
 .tutorial_body{
 	display: grid;
-	grid-template-columns: 20% 75% 5%;
+	grid-template-columns: 15% repeat(1, 1fr) 100px;
 	grid-template-rows: minmax(8vh, auto);
 }
 
 .tutorial_header{
 	grid-column: 2;
   	grid-row: 1;
-  	border: 2px solid red;
   	position: sticky;
 	top: 0;
+	background-color:  #141414;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 10px;
 }
 
 .home_nav{
 	grid-column: 3;
   	grid-row: 1;
-  	border: 2px solid red;
   	position: sticky;
 	top: 0;
+	background-color: #141414;
+	padding: 10px;
+	text-align: center;
+}
+
+.home_nav a{
+	color: #FFFFFF;
+}
+.home_nav a:hover{
+	color: #E1E1E1;	
+}
+.fa-home{
+	font-size: 50px;
 }
 
 .tutorial_nav{
 	grid-column: 1;
 	grid-row: 1/span 3;
 	height: 100vh;
-	border: 2px solid red;
 	position: sticky;
 	top: 0;
 	overflow-y: auto;
 	overflow-x: hidden;
+	background-color: #000000;
+}
+
+.tutorial_nav li{
+	text-align: center;
+}
+
+.tutorial_nav li a{
+	display: block;
+	padding: 20px 0;
+	font-size: 20px;
+	color: #FFFFFF;
+	border-bottom: 1px solid #1B1B1B;
+}
+
+.tutorial_nav li a:hover{
+	background-color: #1B1B1B;
 }
 
 .tutorial_main{
@@ -204,9 +245,20 @@ p{
 .tutorial_footer{
 	grid-column: 2/span 3;
 	grid-row: 3;
-	border: 2px solid red;
+	text-align: center;
+	background-color: #141414;
+}
+
+.tutorial_footer p{
+	padding: 20px;
+	font-weight: bold;
 }
 
 .tutorial_footer a{
-	font-size: 20px;
+	font-size: 100px;
+	color: #FF0000;
+}
+
+.tutorial_footer a:hover{
+	color: #E1E1E1;
 }

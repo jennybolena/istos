@@ -164,6 +164,7 @@ p{
 .tutorial_body{
 	display: grid;
 	grid-template-columns: 20% 75% 5%;
+	grid-template-rows: minmax(8vh, auto);
 }
 
 .tutorial_header{
@@ -190,12 +191,14 @@ p{
 	position: sticky;
 	top: 0;
 	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 .tutorial_main{
 	grid-column: 2/span 3;
 	grid-row: 2;
 	border: 2px solid red;
+	overflow-y: auto;
 }
 
 .tutorial_footer{
@@ -205,5 +208,5 @@ p{
 }
 
 .tutorial_footer a{
-	font-size: 30vw;
+	font-size: 20px;
 }

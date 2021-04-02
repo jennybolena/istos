@@ -249,14 +249,20 @@ ul{
 	width: 100%;
 	border: 3px solid #141414;
 	box-shadow: 5px 5px 20px #141414;
-	
 }
 
-.tutorial_article_setup:hover{
+.tutorial_article_sql{
+	text-align: center;
+	width: 50%;
+	border: 3px solid #141414;
+	box-shadow: 5px 5px 20px #141414;
+}
+
+.tutorial_article_setup:hover, .tutorial_article_sql:hover{
 	background-color: #A6A8AD;
 }
 
-.tutorial_article_setup >h2{
+.tutorial_article_setup >h2, .tutorial_article_sql >h2 {
 	padding: 10px 0 20px;
 	color: #000000;
 }
@@ -265,6 +271,12 @@ ul{
 	padding-bottom: 40px;
 	width: 70%;
 	height: 400px;
+}
+
+.tutorial_article_sql >iframe{
+	padding-bottom: 40px;
+	width: 70%;
+	height: 300px;
 }
 
 .tutorial_footer{

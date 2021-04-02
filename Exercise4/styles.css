@@ -238,8 +238,33 @@ ul{
 .tutorial_main{
 	grid-column: 2/span 3;
 	grid-row: 2;
-	border: 2px solid red;
-	overflow-y: auto;
+	padding: 20px 0;
+	background-color: #737373;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tutorial_article_setup{
+	text-align: center;
+	width: 100%;
+	border: 3px solid #141414;
+	box-shadow: 5px 5px 20px #141414;
+	
+}
+
+.tutorial_article_setup:hover{
+	background-color: #A6A8AD;
+}
+
+.tutorial_article_setup >h2{
+	padding: 10px 0 20px;
+	color: #000000;
+}
+
+.tutorial_article_setup >iframe{
+	padding-bottom: 40px;
+	width: 70%;
+	height: 400px;
 }
 
 .tutorial_footer{

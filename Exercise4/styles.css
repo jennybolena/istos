@@ -173,7 +173,7 @@ ul{
 /*set up and sql styling*/
 .tutorial_body{
 	display: grid;
-	grid-template-columns: 15% repeat(1, 1fr) 100px;
+	grid-template-columns: 20% repeat(1, 1fr) 100px;
 	grid-template-rows: minmax(8vh, auto);
 }
 
@@ -234,6 +234,22 @@ ul{
 .tutorial_nav li a:hover{
 	background-color: #1B1B1B;
 }
+
+.tutorial_nav::-webkit-scrollbar-track{
+  background-color: #000000;
+}
+.tutorial_nav::-webkit-scrollbar{
+  width: 10px;
+}
+.tutorial_nav::-webkit-scrollbar-thumb{
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.tutorial_nav::-webkit-scrollbar-thumb:hover{
+	background-color: #EDEBE4;
+}
+
 
 .tutorial_main{
 	grid-column: 2/span 3;

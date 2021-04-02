@@ -162,7 +162,7 @@ ul{
 .rights_footer{
 	background-color: #1B1B1B;
 	text-align: center;
-	padding: 10px;
+	padding: 10px 10px 20px;
 }
 .rights_footer p{
 	padding-top: 10px; 
@@ -281,7 +281,9 @@ ul{
 .tutorial_article_setup >h2, .tutorial_article_sql >h2 {
 	padding: 10px 0 20px;
 	color: #000000;
+	
 }
+
 
 .tutorial_article_setup >iframe{
 	border: 0;

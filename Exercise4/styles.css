@@ -284,12 +284,14 @@ ul{
 }
 
 .tutorial_article_setup >iframe{
+	border: 0;
 	padding-bottom: 40px;
 	width: 70%;
 	height: 400px;
 }
 
 .tutorial_article_sql >iframe{
+	border: 0;
 	padding-bottom: 40px;
 	width: 70%;
 	height: 300px;

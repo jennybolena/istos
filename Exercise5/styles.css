@@ -333,4 +333,46 @@ ul{
 		font-size: 20px;
 		padding: 5px 10px;
 	}
+
+	.tutorial_body{
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		grid-template-areas: 'tut_header'
+		'tut_nav'
+		'tut_main'
+		'tut_footer'
+		'home_nav';
+	}
+
+	.tutorial_header{
+		position: relative;
+	}
+
+	.home_nav{
+		position: relative;
+		text-align: left;
+		border-top: 2px solid #FFFFFF;
+	}
+
+	.tutorial_nav{
+		height: 60px;
+	}
+
+
+	.tutorial_article_setup >iframe{
+		width: 90%;
+		height: 250px;
+	}
+
+	.tutorial_article_sql{
+		width: 100%;
+	}
+	.tutorial_article_sql >iframe{
+		width: 90%;
+		height: 250px;
+	}
+
+	.tutorial_footer{
+		border-top: 2px solid #FFFFFF;
+	}
 }

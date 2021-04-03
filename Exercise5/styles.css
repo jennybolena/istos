@@ -317,3 +317,20 @@ ul{
 .tutorial_footer a:hover{
 	color: #E1E1E1;
 }
+
+
+@media screen and (max-width: 620px) {
+	.index_page{
+		grid-template-areas: 'header'
+		'main'
+		'side'
+		'footer';
+	}
+
+	.header_nav >a{
+		width: 100%;
+		text-align: left;
+		font-size: 20px;
+		padding: 5px 10px;
+	}
+}

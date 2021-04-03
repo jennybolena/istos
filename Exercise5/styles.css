@@ -66,15 +66,16 @@ ul{
 /*index page styling*/
 .index_header{grid-area: header;}
 .index_main{grid-area: main;}
-.side_content{grid-area: side;}
+.side_content1{grid-area: side_one;}
+.side_content2{grid-area: side_two;}
 .rights_footer{grid-area: footer;}
 
 .index_page{
 	display: grid;
 	grid-template-areas:
-    'header header header header header'
-    'main main main main side'
-    'footer footer footer footer footer';
+    'header  header header'
+    'side_one main  side_two'
+    'footer  footer footer';
 }
 
 .index_header{
@@ -134,13 +135,13 @@ ul{
 }
 
 
-.side_content{
+.side_content1, .side_content2{
 	background-color: #E1E1E1;
 	color: #000000;
 	padding: 10px;
 }
 
-.side_content h3{
+.side_content1 h3, .side_content2 h3{
 	text-align: center;
 }
 
@@ -154,11 +155,14 @@ ul{
 	font-size: 20px;
 	padding: 10px; 
 	color: #000000;
+	border-bottom: 1px solid #FFFFFF;
 }
 
 .side_nav_bar li a:hover{
 	background-color: #F3F3F3;
+	border-bottom: 1px solid #000000;
 }
+
 .rights_footer{
 	background-color: #1B1B1B;
 	text-align: center;
@@ -227,7 +231,7 @@ ul{
 
 .tutorial_nav li a{
 	display: block;
-	padding: 20px 0;
+	padding: 20px 10px;
 	font-size: 20px;
 	color: #FFFFFF;
 	border-bottom: 1px solid #1B1B1B;
@@ -323,7 +327,8 @@ ul{
 	.index_page{
 		grid-template-areas: 'header'
 		'main'
-		'side'
+		'side_two'
+		'side_one'
 		'footer';
 	}
 
@@ -332,6 +337,10 @@ ul{
 		text-align: left;
 		font-size: 20px;
 		padding: 5px 10px;
+	}
+
+	.side_content2{
+		border-bottom: 2px solid #FFFFFF;
 	}
 
 	.tutorial_body{
@@ -356,6 +365,10 @@ ul{
 
 	.tutorial_nav{
 		height: 60px;
+	}
+
+	.tutorial_nav li a{
+		text-align: left;
 	}
 
 

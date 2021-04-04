@@ -323,6 +323,32 @@ ul{
 
 
 @media screen and (max-width: 980px){
+	dl dd{
+		padding-left: 25px;
+	}
+
+	h1{
+		font-size: 34px;
+	}
+	h2{
+		font-size: 31px;
+	}
+	h3{
+		font-size: 28px;
+	}
+	h4{
+		font-size: 25px;
+	}
+	h5{
+		font-size: 22px;
+	}
+	h6{
+		font-size: 19px;
+	}
+	p{
+		font-size: 17px;
+	}
+
 	.index_page{
 		grid-template-areas: 'header header'
 		'main side_two'
@@ -369,6 +395,32 @@ ul{
 }
 
 @media screen and (max-width: 620px) {
+	dl dd{
+		padding-left: 15px;
+	}
+
+	h1{
+		font-size: 33px;
+	}
+	h2{
+		font-size: 30px;
+	}
+	h3{
+		font-size: 27px;
+	}
+	h4{
+		font-size: 24px;
+	}
+	h5{
+		font-size: 21px;
+	}
+	h6{
+		font-size: 18px;
+	}
+	p{
+		font-size: 16px;
+	}
+
 	.index_page{
 		grid-template-areas: 'header'
 		'main'

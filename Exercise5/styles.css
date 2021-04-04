@@ -110,14 +110,13 @@ ul{
 	color: #000000;
 }
 
-.index_main figure{
-	text-align: center;
+.index_main picture{
+	display: flex;
+	justify-content: center;
 }
 
-.index_main figure img{
-	width: 50%;
-	height: auto; 
-	text-align: center;
+.index_main picture img{
+	width: auto;
 }
 
 .index_main article{

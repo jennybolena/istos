@@ -323,6 +323,52 @@ ul{
 }
 
 
+@media screen and (max-width: 980px){
+	.index_page{
+		grid-template-areas: 'header header'
+		'main side_two'
+		'main side_one'
+		'footer footer'
+	}
+
+		.tutorial_body{
+		grid-template-columns: 20% 80%;
+		grid-template-rows: auto;
+		grid-template-areas: 'tut_nav tut_header'
+		'tut_nav tut_main'
+		'tut_nav tut_footer'
+		'tut_nav home_nav'
+	}
+
+	.side_content2{
+		border-bottom: 2px solid #FFFFFF;
+	}
+	
+	.home_nav{
+		position: relative;
+		text-align: right;
+		border-top: 2px solid #FFFFFF;
+	}
+
+
+	.tutorial_article_setup >iframe{
+		width: 80%;
+		height: 300px;
+	}
+
+	.tutorial_article_sql{
+		width: 100%;
+	}
+	.tutorial_article_sql >iframe{
+		width: 80%;
+		height: 300px;
+	}
+
+	.tutorial_footer{
+		border-top: 2px solid #FFFFFF;
+	}
+}
+
 @media screen and (max-width: 620px) {
 	.index_page{
 		grid-template-areas: 'header'
@@ -359,7 +405,7 @@ ul{
 
 	.home_nav{
 		position: relative;
-		text-align: left;
+		text-align: right;
 		border-top: 2px solid #FFFFFF;
 	}
 

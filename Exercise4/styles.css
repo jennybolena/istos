@@ -64,10 +64,6 @@ ul{
 }
 
 /*index page styling*/
-.index_header{grid-area: header;}
-.index_main{grid-area: main;}
-.side_content{grid-area: side;}
-.rights_footer{grid-area: footer;}
 
 .index_header{grid-area: header;}
 .index_main{grid-area: main;}

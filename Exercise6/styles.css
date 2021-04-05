@@ -17,9 +17,6 @@ header{
 }
 
 
-main{
-	border: 2px solid black;
-}
 
 .inspect_title{grid-area: inspect_title;}
 .before_inspect{grid-area: before_inspect;}
@@ -34,8 +31,10 @@ main{
     'inspect_title inspect_title inspect_title'
     'before_inspect versus after_inspect'
     'inspect_explain inspect_explain inspect_explain';
-
-    padding: 20px;
+    background-color: #E4E4E4;
+    border-radius: 10%;
+    padding: 20px 20px 50px;
+    margin-bottom: 10px;
 }
 
 img{

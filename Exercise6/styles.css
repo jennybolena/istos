@@ -1,0 +1,53 @@
+*, html{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #FFFFFF;
+	color: #000000;
+	overflow-x: hidden;
+	font-family: Arial, Helvetica;
+}
+
+header{
+	text-align: center;
+	padding: 20px;
+}
+
+
+main{
+	border: 2px solid black;
+}
+
+.inspect_title{grid-area: inspect_title;}
+.before_inspect{grid-area: before_inspect;}
+.after_inspect{grid-area: after_inspect;}
+.versus{grid-area: versus;}
+.inspect_explain{ grid-area: inspect_explain;}
+
+.inspect_element{
+	display: grid;
+	grid-template-columns: 45% 1fr 45%;
+	grid-template-areas:
+    'inspect_title inspect_title inspect_title'
+    'before_inspect versus after_inspect'
+    'inspect_explain inspect_explain inspect_explain';
+
+    padding: 20px;
+}
+
+img{
+	width: 100%;
+}
+
+.inspect_element h2, .inspect_element h3, .inspect_element p{
+	text-align: center;
+	padding: 10px;
+}
+
+.versus{
+	font-size: 20px; 
+	font-weight: bold;
+}

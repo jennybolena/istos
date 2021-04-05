@@ -41,12 +41,23 @@ img{
 	width: 100%;
 }
 
+h1{
+	font-size: 35px;
+}
+h2{
+	font-size: 32px;
+}
+h3{
+	font-size: 29px;
+}
+p{
+	font-size: 20px;
+}
 .inspect_element h2, .inspect_element h3, .inspect_element p{
 	text-align: center;
-	padding: 10px;
+	padding-top: 20px;
 }
 
 .versus{
-	font-size: 20px; 
 	font-weight: bold;
 }

@@ -8,7 +8,22 @@ function displayNav(){
   	}
 }
 
-
+function changeColorScheme(color_index){
+	switch(color_index){
+		case 1:
+			document.getElementById('my_index_header').style.backgroundColor = "#000000";
+			document.getElementById('my_rights_footer').style.backgroundColor = "#000000";
+		    break;
+		case 2:
+			document.getElementById('my_index_header').style.backgroundColor = "#06042E";
+			document.getElementById('my_rights_footer').style.backgroundColor = "#06042E";
+			var elements = document.getElementsByClassName('side_content1');
+			for(var i = 0; i < elements.length; i++){
+				elements[i].style.backgroundColor = "#CAE0CF";
+			}
+			
+	}
+}
 function getDailyFact(){
 	var current_date = new Date();
 	var current_day = current_date.getDay();

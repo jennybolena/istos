@@ -116,3 +116,15 @@ footer{
   color: #F20510;
   cursor: pointer;
 }
+
+@media screen and (max-width: 980px){
+	.modal_image{
+		padding-top: 60px; 
+		width: 100%;
+	}
+
+	.close{
+		top: 5px;
+		right: 5px;
+	}
+}

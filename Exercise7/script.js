@@ -13,15 +13,18 @@ function changeColorScheme(color_index){
 		case 1:
 			document.getElementById('my_index_header').style.backgroundColor = "#000000";
 			document.getElementById('my_rights_footer').style.backgroundColor = "#000000";
+			var elements = document.querySelectorAll('[class^="side_content"]');
+			for(var i = 0; i < elements.length; i++){
+				elements[i].style.backgroundColor = "#E1E1E1";
+			}
 		    break;
 		case 2:
 			document.getElementById('my_index_header').style.backgroundColor = "#06042E";
 			document.getElementById('my_rights_footer').style.backgroundColor = "#06042E";
-			var elements = document.getElementsByClassName('side_content1');
+			var elements = document.querySelectorAll('[class^="side_content"]');
 			for(var i = 0; i < elements.length; i++){
 				elements[i].style.backgroundColor = "#CAE0CF";
 			}
-			
 	}
 }
 function getDailyFact(){

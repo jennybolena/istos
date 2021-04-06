@@ -186,14 +186,14 @@ ul{
 	background: linear-gradient( 90deg, #000000 50%,  #E1E1E1 50% ); 
 	border-radius: 50%;
 	border: 5px solid #000000;
-	margin-bottom: 10px;
 }
 
 .color_scheme_blue{
 	width: 100%;
 	height: 80px;
-	background: #000000; /*in case the broser does not suport gradient*/
+	background: #06042E; 
 	background: linear-gradient( 90deg, #06042E 50%,  #CAE0CF 50% ); 
+	margin-bottom: 10px;
 	border-radius: 50%;
 	border: 5px solid #000000;
 }
@@ -512,12 +512,12 @@ ul{
 	.color_scheme_black{
 		flex: 35vw;
 		height: 35vw;
-		margin-right: 10px;
 	}
 
 	.color_scheme_blue{
 		flex: 35vw;
 		height: 35vw;
+		margin-right: 5vw;
 	}
 
 

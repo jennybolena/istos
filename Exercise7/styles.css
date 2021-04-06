@@ -53,8 +53,6 @@ h6{
 }
 p{
 	font-size: 18px;
-	text-align: justify;
-  	text-justify: inter-word;
 }
 
 a{
@@ -101,10 +99,7 @@ ul{
 
 .header_nav .nav_icon{
 	display: none;
-	color: #F08D0C;
-}
-.header_nav .nav_icon:hover{
-	background-color: #000000;
+	color: #FA9107;
 }
 
 .header_nav .home{
@@ -235,6 +230,10 @@ ul{
 	overflow-y: auto;
 	overflow-x: hidden;
 	background-color: #000000;
+}
+
+.tutorial_nav .display_set_up_opt{
+	display: none;
 }
 
 .tutorial_nav li{

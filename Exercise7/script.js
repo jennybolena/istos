@@ -1,7 +1,6 @@
 
 function displayNav(){
-	console.log('in');
-	let el = document.getElementById('main_header_nav');
+	var el = document.getElementById('main_header_nav');
   	if (el.className === "header_nav") {
     	el.className += " responsive";
   	} else {

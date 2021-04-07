@@ -543,11 +543,11 @@ ul{
 	}
 
 	.tutorial_nav{
-		height: 100%;
+		height: auto;
 		overflow: auto;
 	}
 
-	t.utorial_nav .display_set_up_opt .close_btn{
+	.tutorial_nav .display_set_up_opt .close_btn{
 		display: none;
 	
 	}
@@ -574,12 +574,15 @@ ul{
 		cursor: pointer;
 	}
 
+	.tutorial_nav.show_tutorial_nav{
+		height: 100vh;
+	}
 	.tutorial_nav.show_tutorial_nav li{
 		display: block;
 	}
 	.fa-long-arrow-alt-left, .fa-long-arrow-alt-right{
 		display: inline-block;
-		padding: 10px;
+		padding: 0px 10px;
 	}
 	/******************************/
 

@@ -8,25 +8,43 @@ function displayNav(){
   	}
 }
 
+/*function welcome(){
+	if(!localStorage.userName){
+		var user_name = prompt("Please enter your name:", "User");
+	  	document.getElementById("user_name").innerHTML = "Hey " + user_name + "!";
+	  	localStorage.setItem("userName", user_name);
+	}else{
+		document.getElementById("user_name").innerHTML = "Hey " + localStorage.userName + "!";
+	}
+  
+}
+/*
+function applyChosenColorScheme(){
+	if(localStorage.colorScheme){
+		changeColorScheme(localStorage.colorScheme);
+	}
+}*/
+
 function changeColorScheme(color_index){
-	switch(color_index){
-		case 1:
-			document.getElementById('my_index_header').style.backgroundColor = "#000000";
-			document.getElementById('my_rights_footer').style.backgroundColor = "#000000";
-			var elements = document.querySelectorAll('[class^="side_content"]');
+	//localStorage.setItem("colorScheme", color_index);
+	if(color_index == '1'){
+		document.getElementById('my_index_header').style.backgroundColor = "#000000";
+		document.getElementById('my_rights_footer').style.backgroundColor = "#000000";
+		var elements = document.querySelectorAll('[class^="side_content"]');
 			for(var i = 0; i < elements.length; i++){
 				elements[i].style.backgroundColor = "#E1E1E1";
 			}
-		    break;
-		case 2:
+		}
+		else{
 			document.getElementById('my_index_header').style.backgroundColor = "#06042E";
 			document.getElementById('my_rights_footer').style.backgroundColor = "#06042E";
 			var elements = document.querySelectorAll('[class^="side_content"]');
 			for(var i = 0; i < elements.length; i++){
 				elements[i].style.backgroundColor = "#CAE0CF";
 			}
-	}
+		}
 }
+
 function getDailyFact(){
 	var current_date = new Date();
 	var current_day = current_date.getDay();
@@ -40,11 +58,10 @@ function getDailyFact(){
 	  case 2:
 	      el.innerHTML = "SQL Server's main competitors are Oracle and PostgreSQL.";
 	  case 3:
-	    el.innerHTML = 'SQL is Turing complete.';
-	    break;
+	    el.innerHTML = 'SQL was initially developed at IBM.';
 	    break;
 	  case 4:
-	    el.innerHTML = 'SQL was initially developed at IBM.';
+	    el.innerHTML = 'SQL is Turing complete.';
 	    break;
 	  case 5:
 	    el.innerHTML = 'SQL is a little more than 50 years old.';

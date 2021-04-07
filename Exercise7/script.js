@@ -54,6 +54,7 @@ function getDailyFact(){
 	    break;
 	  case 2:
 	      el.innerHTML = "SQL Server's main competitors are Oracle and PostgreSQL.";
+	      break;
 	  case 3:
 	    el.innerHTML = 'SQL was initially developed at IBM.';
 	    break;

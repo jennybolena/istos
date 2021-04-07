@@ -268,6 +268,7 @@ ul{
 
 .tutorial_nav .display_set_up_opt{
 	display: none;
+	text-align: center;
 }
 
 .tutorial_nav li{
@@ -505,7 +506,6 @@ ul{
 		display: block;
 		text-align: left;
 	}
-	
 
 	.color_schemes{
 		width: 100%;
@@ -543,12 +543,36 @@ ul{
 	}
 
 	.tutorial_nav{
-		height: 60px;
+		height: 100%;
+		overflow: auto;
 	}
 
 	.tutorial_nav li a{
 		text-align: left;
 	}
+
+
+	/*tutorial nav responsive*/
+	.tutorial_nav li:not(:first-child){
+		display: none;
+	}
+
+	.tutorial_nav .display_set_up_opt{
+		display: block;
+		background-color: #FA9109; 
+		cursor: pointer;
+	}
+
+	.tutorial_nav .display_set_up_opt:hover{
+		display: block;
+		background-color: #FA9107; 
+		cursor: pointer;
+	}
+
+	.tutorial_nav.show_tutorial_nav li{
+		display: block;
+	}
+	/******************************/
 
 
 	.tutorial_article_setup >iframe{

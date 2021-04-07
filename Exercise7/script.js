@@ -8,25 +8,22 @@ function displayNav(){
   	}
 }
 
-/*function welcome(){
-	if(!localStorage.userName){
-		var user_name = prompt("Please enter your name:", "User");
-	  	document.getElementById("user_name").innerHTML = "Hey " + user_name + "!";
-	  	localStorage.setItem("userName", user_name);
-	}else{
-		document.getElementById("user_name").innerHTML = "Hey " + localStorage.userName + "!";
-	}
-  
+function displayTutorial_nav(el){
+  	if (el.className === "tutorial_nav") {
+    	el.className += " show_tutorial_nav";
+  	} else {
+    	el.className = "tutorial_nav";
+  	}
 }
-/*
+
 function applyChosenColorScheme(){
 	if(localStorage.colorScheme){
 		changeColorScheme(localStorage.colorScheme);
 	}
-}*/
+}
 
 function changeColorScheme(color_index){
-	//localStorage.setItem("colorScheme", color_index);
+	localStorage.setItem("colorScheme", color_index);
 	if(color_index == '1'){
 		document.getElementById('my_index_header').style.backgroundColor = "#000000";
 		document.getElementById('my_rights_footer').style.backgroundColor = "#000000";

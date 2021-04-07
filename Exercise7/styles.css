@@ -86,6 +86,7 @@ ul{
 	background-color: #000000;
 	position: sticky;
 	top: 0;
+	z-index: 1;
 }
 
 .header_nav a{
@@ -170,6 +171,33 @@ ul{
 .side_nav_bar li a:hover{
 	background-color: #F3F3F3;
 	border-bottom: 1px solid #000000;
+}
+
+.btn{
+	padding-top: 20px; 
+	display: flex;
+	justify-content: center;
+}
+
+.button{
+	display: inline-block;
+	width: 75%;
+	background-color:#E8E5C5;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 20px;
+	border-radius: 5%;
+	padding: 20px;
+	border: 2px solid #000000;
+	box-shadow: 3px 2px 8px #000000;
+}
+
+.button:hover{
+	background-color: white;
+
+}
+.show_news{
+	display: none;
 }
 
 .color_schemes{
@@ -415,7 +443,7 @@ ul{
 		'tut_nav home_nav'
 	}
 
-	.side_content1, .side_content2, .side_content3{
+	.side_content1, .side_content2, .side_content3, .side_content4{
 		border-bottom: 2px solid #FFFFFF;
 	}
 	

@@ -10,8 +10,7 @@
 		<script src="script.js"></script>
 		<link rel="stylesheet" href="styles.css">
 	</head>
-	<body class="index_page" id="body"  onload="getDailyFact(); applyChosenColorScheme();">
-
+	<body class="index_page" id="body" onload="getDailyFact(); applyChosenColorScheme(); getNewsDisplay();">
 		<header id="my_index_header" class="index_header">
 			<nav id='main_header_nav' class="header_nav">
 				<a href="#body" target="_self" class='home'> Home </a>
@@ -58,14 +57,21 @@
 			</article>
 		</main>	
 		<aside class="side_content1">
-			<h3>News</h3>
-			<nav class='side_nav_bar'>			
-				<ul>	
-					<li><a href="https://sqltechblog.com/" target="_blank">SQL Tech Blog</a></li>
-					<li><a href="https://www.infoworld.com/category/sql/" target="_blank">Info World</a></li>
+			<div id="btn_news" class="btn">
+				<button class="button" onclick="displayNews()">Show News</button>
+			</div>
+			
+			<div id="news_displayed" class="show_news">
+				<h3>News</h3>
+				<nav class='side_nav_bar'>			
+					<ul>	
+						<li><a href="https://sqltechblog.com/" target="_blank">SQL Tech Blog</a></li>
+						<li><a href="https://www.infoworld.com/category/sql/" target="_blank">Info World</a></li>
 					
-				</ul>
-			</nav>
+					</ul>
+				</nav>
+			</div>
+			
 		</aside>
 		<aside class="side_content2">
 			<h3>Useful Links</h3>

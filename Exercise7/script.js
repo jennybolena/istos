@@ -8,6 +8,20 @@ function displayNav(){
   	}
 }
 
+function getNewsDisplay(){
+	if(sessionStorage.getItem('newsShown')){
+		displayNews();
+	}
+}
+function displayNews(){
+	sessionStorage.setItem('newsShown', 1);
+	var el_hide = document.getElementById('btn_news');
+	var el_show = document.getElementById('news_displayed');
+	el_hide.style.display ="none";
+	el_show.style.display = "block";
+
+}
+
 function displayTutorial_nav(el){
   	if (el.className === "tutorial_nav") {
     	el.className += " show_tutorial_nav";

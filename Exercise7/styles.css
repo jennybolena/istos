@@ -547,6 +547,10 @@ ul{
 		overflow: auto;
 	}
 
+	t.utorial_nav .display_set_up_opt .close_btn{
+		display: none;
+	
+	}
 	.tutorial_nav li a{
 		text-align: left;
 	}
@@ -554,6 +558,7 @@ ul{
 
 	/*tutorial nav responsive*/
 	.tutorial_nav li:not(:first-child){
+		position: relative;
 		display: none;
 	}
 
@@ -571,6 +576,10 @@ ul{
 
 	.tutorial_nav.show_tutorial_nav li{
 		display: block;
+	}
+	.fa-long-arrow-alt-left, .fa-long-arrow-alt-right{
+		display: inline-block;
+		padding: 10px;
 	}
 	/******************************/
 

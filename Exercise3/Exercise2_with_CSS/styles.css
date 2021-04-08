@@ -201,6 +201,12 @@ i{
 	text-align: center;
 }
 
+#project_img{
+	width: 20%;
+	height: auto;
+	border-radius: 10%;
+	text-align: center;
+}
 #shout_out p{
 	padding: 0 0 20px 10px;
 }

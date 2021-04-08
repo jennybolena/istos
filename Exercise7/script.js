@@ -62,7 +62,7 @@ function changeColorScheme(color_index){
 function getDailyFact(){
 	var current_date = new Date();
 	var current_day = current_date.getDay();
-	var el = document.getElementById('fun_fact');
+	var el = document.querySelector('#fun_fact');
 	el.innerHTML = current_day;
 
 	switch(current_day) {

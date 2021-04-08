@@ -11,6 +11,9 @@ function displayNav(){
 function getNewsDisplay(){
 	if(sessionStorage.getItem('newsShown')){
 		displayNews();
+	}else{
+		var el = document.getElementById('btn_news');
+		el.style.display ="flex";
 	}
 }
 function displayNews(){
@@ -85,3 +88,5 @@ function getDailyFact(){
 	    el.innerHTML = 'SQl Server is wirtten in the programmig languages <em>C</em> and <em>C++</em>';
 	}
 }
+
+window.getNewsDisplay = getNewsDisplay();

@@ -175,7 +175,7 @@ ul{
 
 .btn{
 	padding-top: 20px; 
-	display: flex;
+	display: none;
 	justify-content: center;
 }
 

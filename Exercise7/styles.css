@@ -251,7 +251,7 @@ ul{
 .tutorial_footer{grid-area: tut_footer;}
 .tutorial_body{
 	display: grid;
-	grid-template-columns: 20% repeat(1, 1fr) 100px;
+	grid-template-columns: 20% repeat(1, 1fr) auto;
 	grid-template-rows: minmax(8vh, auto);
 	grid-template-areas:  'tut_nav tut_header home_nav'
 						   'tut_nav tut_main tut_main'
@@ -276,13 +276,16 @@ ul{
 }
 
 .home_nav a{
-	color: #FFFFFF;
+	background-color:#FFFFFF;
+	display: flex;
+	justify-content: center;
 }
 .home_nav a:hover{
-	color: #E1E1E1;	
+	opacity: 0.8;
 }
 .fa-home{
-	font-size: 50px;
+	height: 8vh;
+	width: auto;
 }
 
 .tutorial_nav{
@@ -453,6 +456,11 @@ ul{
 		border-top: 2px solid #FFFFFF;
 	}
 
+	.fa-home{
+		width: 15%;
+		height: auto;
+	}
+
 
 	.tutorial_article_setup >iframe{
 		width: 80%;
@@ -569,7 +577,10 @@ ul{
 		text-align: right;
 		border-top: 2px solid #FFFFFF;
 	}
-
+	.fa-home{
+		width: 20%;
+		height: auto;
+	}
 	.tutorial_nav{
 		height: auto;
 		overflow: auto;

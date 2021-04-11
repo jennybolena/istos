@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Microsoft SQL Server</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="sql server intro">
+		<meta name="author" content="Jenny Bolena">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://kit.fontawesome.com/8e87b8ef90.js" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body class="index_page" id="body" onload="getDailyFact(); applyChosenColorScheme(); getNewsDisplay();">
+		<header id="my_index_header" class="index_header">
+			<nav id='main_header_nav' class="header_nav">
+				<a href="#body" target="_self" class='home'> Home </a>
+				<a href="set_up.html" target="_self"> Set Up</a>
+				<a href="sql.html" target="_self"> SQL </a>
+				<a href="javascript:void(0);" id="nav_icon_id" class="nav_icon" onclick="displayNav()">
+					<i class="fas fa-bars"></i>
+				</a>
+			</nav>
+		</header>
+		<main class="index_main">
+			<picture>
+				<source media="(max-width:620px)" srcset="images/sql_server_small.png">
+ 				<source media="(max-width:980px)" srcset="images/sql_server_medium.png">
+  				<img src="images/sql_server_large.png" alt="SQl Sever Logo">
+			</picture>
+			<article>
+				<h2>Microsoft SQL Server</h2>
+				<section>
+					<h3>What is Microsoft SQL Server?</h3>
+					<p>Microsoft SQL Server is a <strong>relational DBMS</strong>(Databse Management System). Realeased by <em>Microsoft</em> and <em>Sybase</em> in the year 1989 it has made its way on the top of DBMS's. What is a DBMS though? A DBMS is a system that gives us ways to manage and work with the incoming <em>data</em> that are stored in a database, in efficient ways. <strong>The data is stored in tables</strong>, which are considered as database objects. The fundamental logical structure of the tables is in rows(each single entry) and in columns(the attributes of the entry). Microsoft SQL Server is a system very useful in the industry of Information Techonolgy since it offers a variety off applications. Those applications include transaction processing, business inteligence and analytics.  A plethora of transactions are handled through it on daily basis. The system comes with the right tools in order to enable the above mentioned applications. It offers high scalability and it can be used from small to large applications and platforms. Everyone can take advantage and use it, since beside the paid versions there are free ones too. It is supported by the operating systems of Microsoft and Linux. <strong>It is built on top of SQL</strong>(Structured Query Language)</p>
+				</section>
+				<section>
+					<h3>What is SQL?</h3>
+					<p><strong>SQL</strong> is the language that is used to communicate and interact with the database. We write SQL queries in order to <em>manipulate</em> the relationships in the database data. Those manipulations include insetion, deletion and update of data. It is an easy to learn language and it is made in such a way that it offers fast data manipulation. It is a powerful tool and knowledge to have considering that we live in a data driven world.  There are many versions of SQL. <strong>Microsoft has come up with T-SQL(Transact SQL)</strong>, making SQL a <em>subset</em> of it. T-SQL comes with more features and more functionalities than the ones offered in the standard SQL. With T-SQL we are able to write blocks of code that deifnes procedures. It is a <em>procedural</em> language that allows definition of variables. It also inculdes additional functions for processing strings and dates.</p>
+				</section>
+				<section>
+					<h3>Editions</h3>
+					<p>Microsoft has done very well with Microsoft SQL Server. It offers different versions based on the needs of the ones using it. </p>
+					<dl>
+						<dt>Express</dt>
+						<dd>Is the best edition for someone new to building small data-driven applications. It is a free edition and has a capacity of 10GB storage.</dd>
+						<dt>Developer</dt>
+						<dd>Free edition that comes with all the features Microsoft SQL Server has to offer. Its use though is limited to development and testing, not production.</dd>
+						<dt>Enterprise</dt>
+						<dd>Comes with every feature. It's the premium paid version, ideal for medium and large enterprises.
+						</dd>
+						<dt>Standard</dt>
+						<dd>It is a paid version ,offering the most standard features, but not all of them. It is ideal for small businesses</dd>
+						<dt>Web</dt>
+						<dd>It is a paid version ideal for web hosts.</dd>
+					</dl>
+				</section>
+			</article>
+		</main>	
+		<aside class="side_content1">
+			<div id="btn_news" class="btn">
+				<button class="button" onclick="displayNews()">Show News</button>
+			</div>
+			
+			<div id="news_displayed" class="show_news">
+				<h3>News</h3>
+				<nav class='side_nav_bar'>			
+					<ul>	
+						<li><a href="https://sqltechblog.com/" target="_blank">SQL Tech Blog</a></li>
+						<li><a href="https://www.infoworld.com/category/sql/" target="_blank">Info World</a></li>
+					
+					</ul>
+				</nav>
+			</div>
+			
+		</aside>
+		<aside class="side_content2">
+			<h3>Useful Links</h3>
+			<nav class='side_nav_bar'>			
+				<ul>	
+					<li><a href="https://www.microsoft.com/en-us/sql-server/sql-server-2019" target="_blank">SQL Server</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/SQL" target="_blank">SQL wiki</a></li>
+					<li><a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads" target="_blank">Downloads</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<aside  class="side_content3">
+			<h3>Fun Fact</h3>
+			<p id="fun_fact"></p>
+		</aside>
+		<aside class="side_content4">
+			<h3><span id="user_name"></span> Change Color Theme</h3>
+			<div class="color_schemes">
+				<div class="color_scheme_blue" onclick="changeColorScheme(2)"></div>
+				<div class="color_scheme_black" onclick="changeColorScheme(1)"></div>
+			</div>
+			
+		</aside>
+		<footer id="my_rights_footer" class="rights_footer">
+			<h2>Rights</h2>
+			<p>This web page was created for educational purposes only. Any misconception might be to the writers fault.</p>
+			<p> Copyrights © 2021 Jenny Bolena</p>
+		</footer>	
+	</body>
+</html>

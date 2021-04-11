@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>SQL Server Set Up</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="sql server set up">
+		<meta name="author" content="Jenny Bolena">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://kit.fontawesome.com/8e87b8ef90.js" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body class="tutorial_body">
+		<header class="tutorial_header">
+			<h1>Set Up</h1>
+		</header>
+		<nav class="home_nav">
+			<a href="index.html" aria-label="Home"><img src="images/home_icon.svg" class="fa-home" alt="home"></a>
+		</nav>
+		<nav id="set_up_nav" class="tutorial_nav" onclick="displayTutorial_nav(this)">
+			<ul>
+				<li><a href="javascript:void(0);" id="set_up_opt" class="display_set_up_opt">
+					<i class="fas fa-long-arrow-alt-right"></i>Choose a Set Up<i class="fas fa-long-arrow-alt-left"></i>
+				</a></li>
+				<li><a href="#setup_server_tut" aria-label="Server set up">Set Up Server</a></li>
+				<li><a href="#setup_db_tut" aria-label="Database set up">Set Up Database</a></li>
+			</ul>
+		</nav>
+		<main class="tutorial_main">
+			<article id="setup_server_tut" class="tutorial_article_setup">
+				<h2>Set Up Server</h2>
+				<iframe src="https://www.youtube.com/embed/UVGni-V83Eo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe>
+			</article>
+			<article id="setup_db_tut" class="tutorial_article_setup">
+				<h2>Set Up Database</h2>
+				<iframe src="https://www.youtube.com/embed/Rk8I_wQchMU" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe>
+			</article>
+		</main>
+		<footer class="tutorial_footer">
+			<p>See more videos on Youtube</p>
+			<a href="https://www.youtube.com/channel/UCDam4SyRftQDP-5NrW-UvQg" aria-label="Youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+		</footer>
+	</body>
+</html>

@@ -586,10 +586,6 @@ ul{
 		overflow: auto;
 	}
 
-	.tutorial_nav .display_set_up_opt .close_btn{
-		display: none;
-	
-	}
 	.tutorial_nav li a{
 		text-align: left;
 	}

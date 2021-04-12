@@ -9,11 +9,11 @@
     <script src="form.js"></script>
     <link rel="stylesheet" href="form.css">
 </head>
-<body>
+<body onload="setMaxDate()">
     <header><h1>Sign Up</h1></header>
     <main>
         <h2 class="welcome_heading">Get an amazing premium experience by filling out the form below!</h2>
-        <form id="sign_up_form" class="sign_up_form" onsubmit="validateData()">
+        <form id="sign_up_form" class="sign_up_form" onsubmit=" return validateData()">
             <fieldset id="personal_info_field" class="personal_info_field">
                 <legend>Personal Info</legend>
                 <div class="personal_info_sec">
@@ -40,7 +40,7 @@
                 </div>
                 <div class="personal_info_sec">
                     <label for="birthday">Birthday</label>
-                    <input type="date" id="birthday" name="birthday" required>
+                    <input type="date" id="birthday" name="birthday"  min='1900-01-01' max='2021-01-01' required>
                 </div>
                 <div class="personal_info_sec">
                     <label for="gender">Gender</label>
@@ -59,9 +59,8 @@
                     <input type="password" id="validate_password" name="validate_password" required>
                     <div class="show_pass">
                         <input type="checkbox" id="show_password" name="show_password" onclick="changePasswordDisplay(this)">
-                        <label for="show_password" >show password</label>
+                        <label for="show_password">show password</label>
                     </div>
-                    <p>shows if passwords are the same</p>
                 </div>
             </fieldset>
 

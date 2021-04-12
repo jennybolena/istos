@@ -1,0 +1,130 @@
+*, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFFFF;
+    color: #000000;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica;
+}
+
+p{
+    font-size: 20px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color:  #141414;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.sign_up_form{
+
+}
+.personal_info_field{grid-area: personal_info_field;}
+.questionnaire_field{ grid-area: questionnaire_field;}
+.sign_up_button{grid-area: sign_up_button;}
+.sign_up_form{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:  'personal_info_field questionnaire_field questionnaire_field'
+    '. sign_up_button .';
+}
+
+legend{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sign_up_form{
+    margin: 20px 30px 70px;
+}
+.personal_info_field, .questionnaire_field{
+    padding: 10px;
+}
+
+.personal_info_sec, .sign_up_form{
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+option{
+    font-size: 18px;
+}
+
+input:focus{
+    background-color: #f7f6f6;
+}
+.personal_info_sec input, .personal_info_sec select{
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.validate_password_label{
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.password_msg{
+    visibility: hidden;
+    padding-top: 10px;
+    border-bottom: solid 2px #06042E;
+    font-size: 16px;
+}
+
+.sign_up_button{
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #141414;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    height: 50px;
+
+}
+
+@media screen and (max-width: 980px) {
+    .sign_up_form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:  'personal_info_field questionnaire_field'
+        'sign_up_button sign_up_button';
+    }
+}
+@media screen and (max-width: 720px) {
+    .sign_up_form{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas:  'personal_info_field'
+        'questionnaire_field'
+        'sign_up_button';
+    }
+
+    footer{
+        position: relative;
+        height: auto;
+    }
+
+    .sign_up_form, sign_up_form{
+        margin: 20px 15px;
+    }
+}

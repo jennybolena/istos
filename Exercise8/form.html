@@ -58,6 +58,10 @@
                     <input type="password" id="password" name="password" minlength="8" required>
                     <label for="validate_password" class="validate_password_label" >Validate Password</label>
                     <input type="password" id="validate_password" name="validate_password" required>
+                    <div class="show_pass">
+                        <input type="checkbox" id="show_password" name="show_password" onclick="changePasswordDisplay(this)">
+                        <label for="show_password" >show password</label>
+                    </div>
                     <p>shows if passwords are the same</p>
                 </div>
             </fieldset>
@@ -147,7 +151,7 @@
 
                 <div class="questionnaire_sec">
                     <label for="time_spent">How many hours are you willing to spend on SQL Server & SQL daily?</label>
-                    <input type="range" id="time_spent" name="time_spent" min="0" max="10"  required oninput="this.nextElementSibling.value = this.value">
+                    <input type="range" id="time_spent" name="time_spent" min="0" max="10"  oninput="displayTimeSpent(this)" required>
                     <output>5</output>
                 </div>
 

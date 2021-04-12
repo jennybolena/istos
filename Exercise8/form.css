@@ -119,6 +119,13 @@ input:focus{
     font-weight: bold;
     margin-top: 20px;
     border-radius: 5px;
+    background-color: #06042E;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.sign_up_button:hover{
+    background-color: #07044f;
 }
 
 footer{

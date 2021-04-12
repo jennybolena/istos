@@ -29,7 +29,6 @@ function calculateAge() {
     let oneDay = 24 * 60 * 60 * 1000; //in ms
     let age = Math.floor(Math.floor((utc1 - utc2) / oneDay) / 365);
     return age;
-
 }
 
 function validateData() {

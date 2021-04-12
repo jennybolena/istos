@@ -13,8 +13,9 @@
 <body>
     <header><h1>Sign Up</h1></header>
     <main>
+        <h2 class="welcome_heading">Get an amazing premium experience by filling out the form below!</h2>
         <form id="sign_up_form" class="sign_up_form">
-            <fieldset class="personal_info_field">
+            <fieldset id="personal_info_field" class="personal_info_field">
                 <legend>Personal Info</legend>
                 <div class="personal_info_sec">
                     <label for="fname">First name</label>
@@ -30,7 +31,7 @@
                 </div>
                 <div class="personal_info_sec">
                     <label for="phone">Enter a phone number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="e.g. 6911111111" pattern="[0-9]{10}">
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. 6911111111" pattern="[0-9]{10}" required>
                 </div>
                 <div class="personal_info_sec">
                     <label for="city">Address</label>
@@ -44,7 +45,7 @@
                 </div>
                 <div class="personal_info_sec">
                     <label for="gender">Gender</label>
-                    <select name="gender" id="gender">
+                    <select name="gender" id="gender" required>
                         <option value="no_choice">No choice</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
@@ -53,7 +54,7 @@
                 </div>
 
                 <div class="personal_info_sec">
-                    <label for="password">Password</label>
+                    <label for="password">Password(min 8 characters)</label>
                     <input type="password" id="password" name="password" minlength="8" required>
                     <label for="validate_password" class="validate_password_label" >Validate Password</label>
                     <input type="password" id="validate_password" name="validate_password" required>
@@ -61,7 +62,7 @@
                 </div>
             </fieldset>
 
-            <fieldset class="questionnaire_field">
+            <fieldset id="questionnaire_field" class="questionnaire_field">
                 <legend>Questionnaire</legend>
 
                 <div class="questionnaire_sec">
@@ -111,7 +112,7 @@
                 <div class="questionnaire_sec">
                     <p>Have you worked with other DBMS systems?</p>
                     <div class="radio_sec">
-                        <input type="radio" id="other_dbms_yes" name="other_dbms" value="yes">
+                        <input type="radio" id="other_dbms_yes" name="other_dbms" value="yes" required>
                         <label for="other_dbms_yes">Yes</label>
                     </div>
                     <div class="radio_sec">
@@ -123,7 +124,7 @@
                <div class="questionnaire_sec">
                     <p>Have you worked with none relational DBMS systems?</p>
                     <div class="radio_sec">
-                        <input type="radio" id="olap_yes" name="olap" value="yes">
+                        <input type="radio" id="olap_yes" name="olap" value="yes" required>
                         <label for="olap_yes">Yes</label>
                     </div>
                     <div class="radio_sec">
@@ -135,7 +136,7 @@
                 <div class="questionnaire_sec">
                     <p>Have you heard of OLAP?</p>
                     <div class="radio_sec">
-                        <input type="radio" id="non_relational_yes" name="non_relational" value="yes">
+                        <input type="radio" id="non_relational_yes" name="non_relational" value="yes" required>
                         <label for="non_relational_yes">Yes</label>
                     </div>
                     <div class="radio_sec">
@@ -146,12 +147,12 @@
 
                 <div class="questionnaire_sec">
                     <label for="time_spent">How many hours are you willing to spend on SQL Server & SQL daily?</label>
-                    <input type="range" id="time_spent" name="time_spent" min="0" max="10" oninput="this.nextElementSibling.value = this.value">
+                    <input type="range" id="time_spent" name="time_spent" min="0" max="10"  required oninput="this.nextElementSibling.value = this.value">
                     <output>5</output>
                 </div>
 
                 <div class="questionnaire_sec">
-                    <p>Are you instersted in the following topics?</p>
+                    <p>Are you interested in the following topics?</p>
                     <div class="check_box_sec">
                         <input type="checkbox" id="extra_knowledge_big_data" name="extra_knowledge_big_data" value="big_data">
                         <label for="extra_knowledge_big_data"> Big Data</label>
@@ -173,10 +174,9 @@
                         <label for="start_learning_yes_yes">Definitely YES!</label>
                     </div>
                 </div>
-
             </fieldset>
 
-            <input type="button" id="sign_up_button" class="sign_up_button" value="SIGN UP">
+            <input type="submit" id="sign_up_button" class="sign_up_button" value="SIGN UP">
 
         </form>
     </main>

@@ -24,10 +24,12 @@ header{
     padding: 10px;
 }
 
-
-.sign_up_form{
-
+.welcome_heading{
+    padding: 10px 5px 0px;
+    font-size: 28px;
+    text-align: center;
 }
+
 .personal_info_field{grid-area: personal_info_field;}
 .questionnaire_field{ grid-area: questionnaire_field;}
 .sign_up_button{grid-area: sign_up_button;}
@@ -43,7 +45,10 @@ legend{
     font-weight: bold;
     text-align: center;
 }
-
+.validate_password_label{
+    display: block;
+    padding-top: 5px;
+}
 .sign_up_form{
     margin: 20px 30px 70px;
 }
@@ -152,6 +157,10 @@ footer{
     .questionnaire_sec{
         flex: 100%;
     }
+
+    .welcome_heading{
+        font-size: 26px;
+    }
 }
 @media screen and (max-width: 720px) {
     .sign_up_form{
@@ -165,6 +174,10 @@ footer{
     footer{
         position: relative;
         height: auto;
+    }
+
+    .welcome_heading{
+        font-size: 24px;
     }
 
     .sign_up_form, sign_up_form{

@@ -61,18 +61,19 @@ option{
     font-size: 18px;
 }
 
+input, select{
+    border-radius: 6px;
+}
+
 input:focus{
     background-color: #f7f6f6;
 }
 .personal_info_sec input, .personal_info_sec select{
     width: 100%;
-    padding: 10px 10px;
+    padding: 10px;
 }
 
-.validate_password_label{
-    display: inline-block;
-    padding-top: 10px;
-}
+
 
 .password_msg{
     visibility: hidden;
@@ -83,6 +84,34 @@ input:focus{
 
 
 /*questionnaire fieldset*/
+.questionnaire_field{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.questionnaire_sec{
+    flex: 50%;
+    padding: 10px 20px 10px 10px;
+    margin-bottom: 20px;
+    border: 3px solid #06042E;
+    border-radius: 4px;
+
+
+}
+
+.questionnaire_sec input[list]{
+    margin-top: 10px;
+    width: 100%;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.questionnaire_sec .radio_sec, .questionnaire_sec .check_box_sec{
+    padding: 5px 0;
+}
+
 
 .sign_up_button{
     padding: 15px;
@@ -111,6 +140,10 @@ footer{
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:  'personal_info_field questionnaire_field'
         'sign_up_button sign_up_button';
+    }
+
+    .questionnaire_sec{
+        flex: 100%;
     }
 }
 @media screen and (max-width: 720px) {

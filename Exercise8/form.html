@@ -57,38 +57,126 @@
                     <input type="password" id="password" name="password" minlength="8" required>
                     <label for="validate_password" class="validate_password_label" >Validate Password</label>
                     <input type="password" id="validate_password" name="validate_password" required>
-                    <p id="password_msg" class="password_msg">sfe</p>
+                    <p>shows if passwords are the same</p>
                 </div>
             </fieldset>
 
             <fieldset class="questionnaire_field">
                 <legend>Questionnaire</legend>
+
                 <div class="questionnaire_sec">
-                    <p>What is your education level?</p>
+                    <label for="education">What is your education level?</label>
+                    <input list="educations" name="education" id="education" required>
+                    <datalist id="educations">
+                        <option value="Bachelor">
+                        <option value="Master">
+                        <option value="PhD">
+                        <option value="Other">
+                    </datalist>
+                </div>
+
+                <div class="questionnaire_sec">
+                    <label for="career">What is your career?</label>
+                    <input list="careers" name="career" id="career"  required>
+                    <datalist id="careers">
+                        <option value="Student">
+                        <option value="Teacher">
+                        <option value="Employee">
+                        <option value="Other">
+                    </datalist>
+                </div>
+
+                <div class="questionnaire_sec">
+                    <label for="sql_server_level">What is your SQL Server knowledge level?</label>
+                    <input list="sql_server_levels" name="sql_server_level" id="sql_server_level"   required>
+                    <datalist id="sql_server_levels">
+                        <option value="Beginner">
+                        <option value="Intermediate">
+                        <option value="Expert">
+                        <option value="Other">
+                    </datalist>
+                </div>
+
+                <div class="questionnaire_sec">
+                    <label for="sql_level">What is your SQL knowledge level?</label>
+                    <input list="sql_levels" name="sql_server_level" id="sql_level"  required>
+                    <datalist id="sql_levels">
+                        <option value="Beginner">
+                        <option value="Intermediate">
+                        <option value="Expert">
+                        <option value="Other">
+                    </datalist>
+                </div>
+
+                <div class="questionnaire_sec">
+                    <p>Have you worked with other DBMS systems?</p>
                     <div class="radio_sec">
-                        <input type="radio" id="bachelor" name="education" value="bachelor">
-                        <label for="bachelor">Bachelor</label>
+                        <input type="radio" id="other_dbms_yes" name="other_dbms" value="yes">
+                        <label for="other_dbms_yes">Yes</label>
                     </div>
                     <div class="radio_sec">
-                        <input type="radio" id="master" name="education" value="master">
-                        <label for="master">Master</label>
-                    </div>
-                    <div class="radio_sec">
-                        <input type="radio" id="phd" name="education" value="phd">
-                        <label for="phd">PhD</label>
-                    </div>
-                    <div class="radio_sec">
-                        <input type="radio" id="other_education" name="education" value="phd">
-                        <label for="other_education">Other</label>
+                        <input type="radio" id="other_dbms_no" name="other_dbms" value="no">
+                        <label for="other_dbms_no">No</label>
                     </div>
                 </div>
+
+               <div class="questionnaire_sec">
+                    <p>Have you worked with none relational DBMS systems?</p>
+                    <div class="radio_sec">
+                        <input type="radio" id="olap_yes" name="olap" value="yes">
+                        <label for="olap_yes">Yes</label>
+                    </div>
+                    <div class="radio_sec">
+                        <input type="radio" id="olap_no" name="olap" value="no">
+                        <label for="olap_no">No</label>
+                    </div>
+                </div>
+
+                <div class="questionnaire_sec">
+                    <p>Have you heard of OLAP?</p>
+                    <div class="radio_sec">
+                        <input type="radio" id="non_relational_yes" name="non_relational" value="yes">
+                        <label for="non_relational_yes">Yes</label>
+                    </div>
+                    <div class="radio_sec">
+                        <input type="radio" id="none_relational_no" name="non_relational" value="no">
+                        <label for="none_relational_no">No</label>
+                    </div>
+                </div>
+
+                <div class="questionnaire_sec">
+                    <label for="time_spent">How many hours are you willing to spend on SQL Server & SQL daily?</label>
+                    <input type="range" id="time_spent" name="time_spent" min="0" max="10" oninput="this.nextElementSibling.value = this.value">
+                    <output>5</output>
+                </div>
+
+                <div class="questionnaire_sec">
+                    <p>Are you instersted in the following topics?</p>
+                    <div class="check_box_sec">
+                        <input type="checkbox" id="extra_knowledge_big_data" name="extra_knowledge_big_data" value="big_data">
+                        <label for="extra_knowledge_big_data"> Big Data</label>
+                    </div>
+                    <div class="check_box_sec">
+                        <input type="checkbox" id="extra_knowledge_machine" name="extra_knowledge_machine" value="machine_learning">
+                        <label for="extra_knowledge_machine"> Machine learning</label>
+                    </div>
+                </div>
+
+                <div class="questionnaire_sec">
+                    <p>Are you ready to start learning?</p>
+                    <div class="radio_sec">
+                        <input type="radio" id="start_learning_yes" name="start_learning" value="yes">
+                        <label for="start_learning_yes">Yes</label>
+                    </div>
+                    <div class="radio_sec">
+                        <input type="radio" id="start_learning_yes_yes" name="start_learning" value="yes_yes" checked>
+                        <label for="start_learning_yes_yes">Definitely YES!</label>
+                    </div>
+                </div>
+
             </fieldset>
 
             <input type="button" id="sign_up_button" class="sign_up_button" value="SIGN UP">
-
-
-
-            <!--add data list for questions-->
 
         </form>
     </main>

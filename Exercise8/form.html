@@ -54,15 +54,34 @@
 
                 <div class="personal_info_sec">
                     <label for="password">Password</label>
-                    <input type="text" id="password" name="password" minlength="8" required>
+                    <input type="password" id="password" name="password" minlength="8" required>
                     <label for="validate_password" class="validate_password_label" >Validate Password</label>
-                    <input type="text" id="validate_password" name="validate_password" required>
+                    <input type="password" id="validate_password" name="validate_password" required>
                     <p id="password_msg" class="password_msg">sfe</p>
                 </div>
             </fieldset>
 
             <fieldset class="questionnaire_field">
                 <legend>Questionnaire</legend>
+                <div class="questionnaire_sec">
+                    <p>What is your education level?</p>
+                    <div class="radio_sec">
+                        <input type="radio" id="bachelor" name="education" value="bachelor">
+                        <label for="bachelor">Bachelor</label>
+                    </div>
+                    <div class="radio_sec">
+                        <input type="radio" id="master" name="education" value="master">
+                        <label for="master">Master</label>
+                    </div>
+                    <div class="radio_sec">
+                        <input type="radio" id="phd" name="education" value="phd">
+                        <label for="phd">PhD</label>
+                    </div>
+                    <div class="radio_sec">
+                        <input type="radio" id="other_education" name="education" value="phd">
+                        <label for="other_education">Other</label>
+                    </div>
+                </div>
             </fieldset>
 
             <input type="button" id="sign_up_button" class="sign_up_button" value="SIGN UP">

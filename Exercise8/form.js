@@ -31,6 +31,51 @@ function calculateAge() {
     return age;
 }
 
+
+/*password check*/
+function passCheck(el, show){
+    let pass = document.getElementById('password');
+    let pass_check =  document.getElementById('pass_check');
+
+    if(show) pass_check.style.visibility = 'visible';
+
+    if(pass.value !== el.value){
+        if(show) {
+            pass_check.innerHTML = 'Not matching passwords';
+            pass_check.style.color = 'red';
+        }
+        return false;
+    }
+
+    if(show){
+        pass_check.innerHTML = 'Matching passwords';
+        pass_check.style.color = 'darkgreen';
+    }
+
+    return true;
+}
+
+function hidePassCheck() {
+    let pass_check =  document.getElementById('pass_check');
+    pass_check.style.visibility = 'hidden';
+}
+
+/*check email is safe*/
+function checkEmailSafety() {
+    let safe_emails = ['gmail.com', 'hotmail.com', 'yahoo.com'];
+    let user_email = document.getElementById('email').value;
+    let user_email_provider= user_email.split('@')[1];
+    let m;
+    for(m in safe_emails){
+        if( safe_emails[m] === user_email_provider){
+            console.log(m);
+            return true;
+        }
+    }
+    console.log('sss');
+    return false;
+}
+
 function validateData() {
     if(calculateAge() < 18){
        return false;
@@ -39,4 +84,3 @@ function validateData() {
    return true;
 }
 
-//alert(document.querySelector('input[name="start_learning"]:checked').value);

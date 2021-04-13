@@ -26,7 +26,7 @@
                 </div>
                 <div class="personal_info_sec">
                     <label for="email">Enter your email</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" onclick="checkEmailSafety()" required>
                 </div>
                 <div class="personal_info_sec">
                     <label for="phone">Enter a phone number</label>
@@ -56,11 +56,12 @@
                     <label for="password">Password(min 8 characters)</label>
                     <input type="password" id="password" name="password" minlength="8" required>
                     <label for="validate_password" class="validate_password_label" >Validate Password</label>
-                    <input type="password" id="validate_password" name="validate_password" required>
+                    <input type="password" id="validate_password" name="validate_password" onblur="hidePassCheck()" onkeyup="passCheck(this, true)" onfocus="passCheck(this, true)" required>
                     <div class="show_pass">
                         <input type="checkbox" id="show_password" name="show_password" onclick="changePasswordDisplay(this)">
                         <label for="show_password">show password</label>
                     </div>
+                    <p id="pass_check" class="pass_check"></p>
                 </div>
             </fieldset>
 

@@ -11,9 +11,11 @@ body{
     font-family: Arial, Helvetica;
 }
 
-p{
+.questionnaire_sec p{
     font-size: 20px;
 }
+
+
 
 header{
     position: sticky;
@@ -99,14 +101,13 @@ input:focus{
     height: 15px;
 }
 
-.password_msg{
+.personal_info_field .pass_check{
+    padding: 5px;
     visibility: hidden;
-    padding-top: 10px;
-    border-bottom: solid 2px #06042E;
-    font-size: 16px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
 }
-
-
 /*questionnaire fieldset*/
 .questionnaire_field{
     display: flex;

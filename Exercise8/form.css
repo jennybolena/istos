@@ -11,17 +11,6 @@ body{
     font-family: Arial, Helvetica;
 }
 
-.questionnaire_sec p, .questionnaire_details .questionnaire_summary{
-    font-size: 20px;
-}
-
-.questionnaire_sec .questionnaire_details >p{
-    font-size: 16px;
-    font-weight: normal;
-    padding: 3px 10px;
-}
-
-
 header{
     position: sticky;
     top: 0;
@@ -142,6 +131,17 @@ input:focus{
     padding: 5px 0;
 }
 
+.questionnaire_sec p, .questionnaire_details .questionnaire_summary{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.questionnaire_sec .questionnaire_details >p{
+    font-size: 16px;
+    font-weight: normal;
+    padding: 3px 10px;
+    cursor: default;
+}
 
 .sign_up_button{
     padding: 15px;

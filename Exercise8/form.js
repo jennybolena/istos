@@ -95,7 +95,6 @@ function showModal(non_valid_data){
     let modal_heading = document.getElementById('modal_heading');
 
     if(non_valid_data.length == 0){
-        alert('s');
         let close = document.getElementById('close');
         close.style.display = 'none';
         modal_heading.innerHTML = 'Sign Up Successful!';
@@ -107,6 +106,7 @@ function showModal(non_valid_data){
         return false;
     }
 
+    modal_heading.innerHTML = 'Data is not valid.';
     document.getElementById('sign_up_button').style.backgroundColor = 'red';
     let x;
     for(x in non_valid_data){

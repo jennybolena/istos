@@ -26,7 +26,7 @@
                 </div>
                 <div class="personal_info_sec">
                     <label for="email">Enter your email</label>
-                    <input type="email" id="email" name="email" onclick="checkEmailSafety()" required>
+                    <input type="email" id="email" name="email"  required>
                 </div>
                 <div class="personal_info_sec">
                     <label for="phone">Enter a phone number</label>
@@ -182,6 +182,11 @@
             <input type="submit" id="sign_up_button" class="sign_up_button" value="SIGN UP">
 
         </form>
+
+        <section id="modal" class="modal">
+            <span class="close" onclick="hideModal()">&times;</span>
+            <h2 id="modal_heading" class="modal_heading"></h2>
+        </section>
     </main>
     <footer><p>GDPR rules are followed.</p></footer>
 </body>

@@ -68,19 +68,47 @@ function checkEmailSafety() {
     let m;
     for(m in safe_emails){
         if( safe_emails[m] === user_email_provider){
-            console.log(m);
             return true;
         }
     }
-    console.log('sss');
     return false;
 }
 
 function validateData() {
-    if(calculateAge() < 18){
-       return false;
-    }
+    let non_valid_data = [];
+    if(calculateAge() < 18) non_valid_data.push('You should be at least 18 years old.');
+    if(!checkEmailSafety()) non_valid_data.push('Email should be of type @gmail.com, @hotmail.com or @yahoo.com.');
+    if(!passCheck(document.getElementById('validate_password'), false))  non_valid_data.push('Passwords do not match.');
 
-   return true;
+    if(non_valid_data.length == 0){
+        return true;
+    }
+    else{
+        document.getElementById('sign_up_button').style.backgroundColor = 'red';
+        showModal(non_valid_data);
+        return false;
+    }
+}
+
+
+function showModal(non_valid_data) {
+    document.getElementById('modal').style.display = 'block';
+    document.getElementById('modal_heading').innerHTML = 'Data is Not Valid';
+
+    let modal = document.getElementById('modal');
+
+    let x;
+    for(x in non_valid_data){
+        let node = document.createElement("p");
+        node.innerHTML = "- " + non_valid_data[x];
+        node.classList.add('modal_text');
+        modal.appendChild(node);
+    }
+}
+
+//<p id="modal_text" class="modal_text"></p>
+
+function hideModal(){
+    document.getElementById('modal').style.display = 'none';
 }
 

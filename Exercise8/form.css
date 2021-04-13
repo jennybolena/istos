@@ -11,10 +11,15 @@ body{
     font-family: Arial, Helvetica;
 }
 
-.questionnaire_sec p{
+.questionnaire_sec p, .questionnaire_details .questionnaire_summary{
     font-size: 20px;
 }
 
+.questionnaire_sec .questionnaire_details >p{
+    font-size: 16px;
+    font-weight: normal;
+    padding: 3px 10px;
+}
 
 
 header{

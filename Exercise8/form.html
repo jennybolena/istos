@@ -125,7 +125,29 @@
                 </div>
 
                <div class="questionnaire_sec">
-                    <p>Have you worked with none relational DBMS systems?</p>
+                   <details class="questionnaire_details">
+                       <summary class="questionnaire_summary">Have you worked with non relational DBMS systems?</summary>
+                       <p>A non-relational database is a database that does not use the tabular schema of rows and columns found
+                           in most traditional database systems.</p>
+                   </details>
+                   <div class="radio_sec">
+                       <input type="radio" id="non_relational_yes" name="non_relational" value="yes" required>
+                       <label for="non_relational_yes">Yes</label>
+                   </div>
+                   <div class="radio_sec">
+                       <input type="radio" id="non_relational_no" name="non_relational" value="no">
+                       <label for="non_relational_no">No</label>
+                   </div>
+                </div>
+
+                <div class="questionnaire_sec">
+                    <details class="questionnaire_details">
+                        <summary class="questionnaire_summary">Have you heard of OLAP?</summary>
+                        <p>OLAP is an acronym for Online Analytical Processing. OLAP performs multidimensional analysis
+                            of business data and provides the capability for complex calculations, trend analysis,
+                            and sophisticated data modeling.
+                        </p>
+                    </details>
                     <div class="radio_sec">
                         <input type="radio" id="olap_yes" name="olap" value="yes" required>
                         <label for="olap_yes">Yes</label>
@@ -133,18 +155,6 @@
                     <div class="radio_sec">
                         <input type="radio" id="olap_no" name="olap" value="no">
                         <label for="olap_no">No</label>
-                    </div>
-                </div>
-
-                <div class="questionnaire_sec">
-                    <p>Have you heard of OLAP?</p>
-                    <div class="radio_sec">
-                        <input type="radio" id="non_relational_yes" name="non_relational" value="yes" required>
-                        <label for="non_relational_yes">Yes</label>
-                    </div>
-                    <div class="radio_sec">
-                        <input type="radio" id="none_relational_no" name="non_relational" value="no">
-                        <label for="none_relational_no">No</label>
                     </div>
                 </div>
 

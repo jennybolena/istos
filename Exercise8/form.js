@@ -80,26 +80,34 @@ function validateData() {
     if(!checkEmailSafety()) non_valid_data.push('Email should be of type @gmail.com, @hotmail.com or @yahoo.com.');
     if(!passCheck(document.getElementById('validate_password'), false))  non_valid_data.push('Passwords do not match.');
 
-    if(non_valid_data.length != 0){
-        document.getElementById('sign_up_button').style.backgroundColor = 'red';
-        showModal(non_valid_data);
-        return false;
-    }
-
-    return showSuccessModal();
+    return showModal(non_valid_data);
 }
 
 
-function showModal(non_valid_data) {
+function showModal(non_valid_data){
     let remove_els = document.getElementsByClassName('modal_text');
     while(remove_els[0]){
         remove_els[0].parentNode.removeChild(remove_els[0]);
     }
-    document.getElementById('modal').style.display = 'block';
-    document.getElementById('modal_heading').innerHTML = 'Data is Not Valid';
 
     let modal = document.getElementById('modal');
+    modal.style.display = 'block';
+    let modal_heading = document.getElementById('modal_heading');
 
+    if(non_valid_data.length == 0){
+        alert('s');
+        let close = document.getElementById('close');
+        close.style.display = 'none';
+        modal_heading.innerHTML = 'Sign Up Successful!';
+        let node = document.createElement("p");
+        node.innerHTML = 'Redirecting to Home...';
+        node.classList.add('modal_text');
+        modal.appendChild(node);
+        setTimeout(function(){ window.location.href ='index.html'; }, 3000);
+        return false;
+    }
+
+    document.getElementById('sign_up_button').style.backgroundColor = 'red';
     let x;
     for(x in non_valid_data){
         let node = document.createElement("p");
@@ -107,26 +115,9 @@ function showModal(non_valid_data) {
         node.classList.add('modal_text');
         modal.appendChild(node);
     }
-}
-
-function showSuccessModal(){
-    let remove_els = document.getElementsByClassName('modal_text');
-    while(remove_els[0]){
-        remove_els[0].parentNode.removeChild(remove_els[0]);
-    }
-
-    let modal = document.getElementById('modal');
-    let close = document.getElementById('close');
-    close.style.display = 'none';
-    modal.style.display = 'block';
-    document.getElementById('modal_heading').innerHTML = 'Sign Up Successful!';
-    setTimeout(function(){ window.location.href ='index.html'; }, 3000);
-    let node = document.createElement("p");
-    node.innerHTML = 'Redirecting to Home...';
-    node.classList.add('modal_text');
-    modal.appendChild(node);
     return false;
 }
+
 
 function hideModal(){
     document.getElementById('modal').style.display = 'none';

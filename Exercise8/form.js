@@ -91,6 +91,10 @@ function validateData() {
 
 
 function showModal(non_valid_data) {
+    let remove_els = document.getElementsByClassName('modal_text');
+    while(remove_els[0]){
+        remove_els[0].parentNode.removeChild(remove_els[0]);
+    }
     document.getElementById('modal').style.display = 'block';
     document.getElementById('modal_heading').innerHTML = 'Data is Not Valid';
 
@@ -106,6 +110,11 @@ function showModal(non_valid_data) {
 }
 
 function showSuccessModal(){
+    let remove_els = document.getElementsByClassName('modal_text');
+    while(remove_els[0]){
+        remove_els[0].parentNode.removeChild(remove_els[0]);
+    }
+
     let modal = document.getElementById('modal');
     let close = document.getElementById('close');
     close.style.display = 'none';

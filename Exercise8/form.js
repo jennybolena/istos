@@ -80,14 +80,13 @@ function validateData() {
     if(!checkEmailSafety()) non_valid_data.push('Email should be of type @gmail.com, @hotmail.com or @yahoo.com.');
     if(!passCheck(document.getElementById('validate_password'), false))  non_valid_data.push('Passwords do not match.');
 
-    if(non_valid_data.length == 0){
-        return true;
-    }
-    else{
+    if(non_valid_data.length != 0){
         document.getElementById('sign_up_button').style.backgroundColor = 'red';
         showModal(non_valid_data);
         return false;
     }
+
+    return showSuccessModal();
 }
 
 
@@ -106,7 +105,19 @@ function showModal(non_valid_data) {
     }
 }
 
-//<p id="modal_text" class="modal_text"></p>
+function showSuccessModal(){
+    let modal = document.getElementById('modal');
+    let close = document.getElementById('close');
+    close.style.display = 'none';
+    modal.style.display = 'block';
+    document.getElementById('modal_heading').innerHTML = 'Sign Up Successful!';
+    setTimeout(function(){ window.location.href ='index.html'; }, 3000);
+    let node = document.createElement("p");
+    node.innerHTML = 'Redirecting to Home...';
+    node.classList.add('modal_text');
+    modal.appendChild(node);
+    return false;
+}
 
 function hideModal(){
     document.getElementById('modal').style.display = 'none';

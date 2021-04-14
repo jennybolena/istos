@@ -10,11 +10,7 @@ body{
     overflow-x: hidden;
     font-family: Arial, Helvetica;
 }
-/*:root{
-    --header-height: 60px;
-    scroll-padding-top: var(--header-height);
-    scroll-behavior: smooth;
-}*/
+
 
 header{
     position: sticky;

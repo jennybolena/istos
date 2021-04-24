@@ -1,3 +1,165 @@
+const firstName = document.querySelector('#fname');
+const lastName = document.querySelector('#lname');
+const email = document.querySelector('#email');
+const city = document.querySelector('#city');
+const zipCode = document.querySelector('#zip');
+const country = document.querySelector('#country');
+const birthday_ = document.querySelector('#birthday');
+const pass1 = document.querySelector('#password');
+const pass2 = document.querySelector('#validate_password');
+const phoneNum = document.querySelector('#phone');
+const education = document.querySelector('#education');
+const career = document.querySelector('#career');
+const sqlServerLevel = document.querySelector('#sql_server_level');
+const sqlLevel = document.querySelector('#sql_level');
+
+firstName.addEventListener('input', () => {
+    firstName.setCustomValidity('');
+    firstName.checkValidity();
+});
+
+firstName.addEventListener('invalid', () => {
+    firstName.setCustomValidity('Enter your first name!');
+});
+
+lastName.addEventListener('input', () => {
+    lastName.setCustomValidity('');
+    lastName.checkValidity();
+});
+
+lastName.addEventListener('invalid', () => {
+    lastName.setCustomValidity('Enter your last name!');
+});
+
+
+email.addEventListener('input', () => {
+    email.setCustomValidity('');
+    email.checkValidity();
+});
+
+email.addEventListener('invalid', () => {
+    if(email.value === '') {
+        email.setCustomValidity('Enter your email!');
+    } else {
+        email.setCustomValidity('Enter your email correctly!');
+    }
+});
+
+phoneNum.addEventListener('input', () => {
+    phoneNum.setCustomValidity('');
+    phoneNum.checkValidity();
+});
+
+phoneNum.addEventListener('invalid', () => {
+    if(phoneNum.value === '') {
+        phoneNum.setCustomValidity('Enter your phone number!');
+    } else if(phoneNum.value.toString().length != 10) {
+        phoneNum.setCustomValidity('Phone number should have 10 digits!');
+    }
+});
+
+city.addEventListener('input', () => {
+    city.setCustomValidity('');
+    city.checkValidity();
+});
+
+city.addEventListener('invalid', () => {
+    city.setCustomValidity('Enter your city!');
+});
+
+zipCode.addEventListener('input', () => {
+    zipCode.setCustomValidity('');
+    zipCode.checkValidity();
+});
+
+zipCode.addEventListener('invalid', () => {
+    if(zipCode.value === '') {
+        zipCode.setCustomValidity('Enter your zip code!');
+    } else {
+        zipCode.setCustomValidity('Enter your zip code correctly(5 digits)!');
+    }
+});
+
+country.addEventListener('input', () => {
+    country.setCustomValidity('');
+    country.checkValidity();
+});
+
+country.addEventListener('invalid', () => {
+    country.setCustomValidity('Enter your country!');
+});
+
+birthday_.addEventListener('input', () => {
+    birthday_.setCustomValidity('');
+    birthday_.checkValidity();
+});
+
+birthday_.addEventListener('invalid', () => {
+    birthday_.setCustomValidity('Enter your birthday!');
+});
+
+pass1.addEventListener('input', () => {
+    pass1.setCustomValidity('');
+    pass1.checkValidity();
+});
+
+pass1.addEventListener('invalid', () => {
+    if(pass1.value === '') {
+        pass1.setCustomValidity('Enter your password!');
+    } else {
+        pass1.setCustomValidity('Password should be at least 8 characters!');
+    }
+});
+
+pass2.addEventListener('input', () => {
+    pass2.setCustomValidity('');
+    pass2.checkValidity();
+});
+
+pass2.addEventListener('invalid', () => {
+    if(pass2.value === '') {
+        pass2.setCustomValidity('Enter your validate password!');
+    } else {
+        pass2.setCustomValidity('Password should be at least 8 characters!');
+    }
+});
+
+education.addEventListener('input', () => {
+    education.setCustomValidity('');
+    education.checkValidity();
+});
+
+education.addEventListener('invalid', () => {
+    education.setCustomValidity('Enter your education!');
+});
+
+career.addEventListener('input', () => {
+    career.setCustomValidity('');
+    birthday_.checkValidity();
+});
+
+career.addEventListener('invalid', () => {
+    career.setCustomValidity('Enter your career!');
+});
+
+sqlServerLevel.addEventListener('input', () => {
+    sqlServerLevel.setCustomValidity('');
+    sqlServerLevel.checkValidity();
+});
+
+sqlServerLevel.addEventListener('invalid', () => {
+    sqlServerLevel.setCustomValidity('Enter your sql server level!');
+});
+
+sqlLevel.addEventListener('input', () => {
+    sqlLevel.setCustomValidity('');
+    sqlLevel.checkValidity();
+});
+
+sqlLevel.addEventListener('invalid', () => {
+    sqlLevel.setCustomValidity('Enter your sql level!');
+});
+/*--------------------------------------------------------------------------------*/
 function changePasswordDisplay(el){
     let psw = document.getElementById('password');
     let val_psw = document.getElementById('validate_password');
